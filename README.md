@@ -1,4 +1,4 @@
-gulp-jsclosure [![Build Status](https://travis-ci.org/jshcrowthe/gulp-jsClosure.svg?branch=master)](https://travis-ci.org/jshcrowthe/gulp-jsClosure)
+gulp-jsclosure [![Build Status](https://travis-ci.org/jshcrowthe/gulp-jsclosure.svg?branch=master)](https://travis-ci.org/jshcrowthe/gulp-jsclosure)
 =======================
 
 
