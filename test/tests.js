@@ -26,6 +26,7 @@
           expect(String(processedFile.contents)).to.equal(String(expectedFile.contents));
         });
         stream.write(testFile);
+        stream.end();
         done();
       });
 
@@ -35,6 +36,7 @@
           expect(String(processedFile.contents)).to.equal(String(expectedFile.contents));
         });
         stream.write(testFile);
+        stream.end();
         done();
       });
 
@@ -44,12 +46,8 @@
           expect(String(processedFile.contents)).to.equal(String(expectedFile.contents));
         });
         stream.write(testFile);
-        done();
-      });
-
-      // Tear Down stream
-      afterEach(function() {
         stream.end();
+        done();
       });
     });
     describe('Testing Array type Options Param:', function() {
@@ -72,6 +70,7 @@
           expect(String(processedFile.contents)).to.equal(String(expectedFile.contents));
         });
         stream.write(testFile);
+        stream.end();
         done();
       });
 
@@ -85,12 +84,8 @@
           expect(String(processedFile.contents)).to.equal(String(expectedFile.contents));
         });
         stream.write(testFile);
-        done();
-      });
-
-      // Tear Down stream
-      afterEach(function() {
         stream.end();
+        done();
       });
     });
     describe('Testing Object type Options Param:', function() {
@@ -113,6 +108,7 @@
           expect(String(processedFile.contents)).to.equal(String(expectedFile.contents));
         });
         stream.write(testFile);
+        stream.end();
         done();
       });
 
@@ -126,12 +122,8 @@
           expect(String(processedFile.contents)).to.equal(String(expectedFile.contents));
         });
         stream.write(testFile);
-        done();
-      });
-
-      // Tear Down stream
-      afterEach(function() {
         stream.end();
+        done();
       });
     });
     describe('Testing Stream/Null Handling:', function() {
