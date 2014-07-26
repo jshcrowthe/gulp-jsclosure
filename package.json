@@ -1,6 +1,6 @@
 {
   "name": "gulp-jsclosure",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Gulp Plugin that wraps your file in a configurable javascript closure",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jshcrowthe/gulp-jsClosure.git"
+    "url": "https://github.com/jshcrowthe/gulp-jsclosure.git"
   },
   "keywords": [
     "gulp",
@@ -19,9 +19,9 @@
   "author": "Josh Crowther <jshcrowthe@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jshcrowthe/gulp-jsClosure/issues"
+    "url": "https://github.com/jshcrowthe/gulp-jsclosure/issues"
   },
-  "homepage": "https://github.com/jshcrowthe/gulp-jsClosure",
+  "homepage": "https://github.com/jshcrowthe/gulp-jsclosure",
   "dependencies": {
     "gulp-util": "^3.0.0",
     "through2": "^0.5.1"
