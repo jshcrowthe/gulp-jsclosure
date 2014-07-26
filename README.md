@@ -8,7 +8,43 @@ Javascript closure creator for [gulp](https://github.com/gulpjs/gulp/).
 var closure = require('gulp-jsclosure');
 ```
 
-## Examples
+## Sample
+
+A simple javascript file (file.js):
+
+```javascript
+var a = 1;
+var b = 2;
+```
+
+#### Options: null
+
+```javascript
+;(function() {
+var a = 1;
+var b = 1;
+})();
+```
+
+#### Options: array (e.g. closure(['angular', 'window']))
+
+```javascript
+;(function(angular, window) {
+var a = 1;
+var b = 2;
+})(angular, window);
+```
+
+#### Options: object (e.g. closure({angular:true, window: true}))
+
+```javascript
+;(function(angular, window) {
+var a = 1;
+var b = 2;
+})(angular, window);
+```
+
+## Example Usage
 
 ```javascript
 gulp.src('./js/*.js')
