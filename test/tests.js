@@ -98,8 +98,8 @@
       });
 
       // Tests
-      it('Return file with closure (1 param) - closure({window:true})', function (done) {
-        var stream = closure({window:true});
+      it('Return file with closure (1 param) - closure({params:["window"]})', function (done) {
+        var stream = closure({params:["window"]});
         var outFile = fs.readFileSync('./test/outputFiles/2.js', 'utf8');
         var expectedFile = new gutil.File({
           contents: new Buffer(outFile)
@@ -113,7 +113,7 @@
       });
 
       it('Return file with closure (2 params) - closure({window:true, document:true})', function (done) {
-        var stream = closure({window:true, document:true});
+        var stream = closure({params:["window", "document"]});
         var outFile = fs.readFileSync('./test/outputFiles/3.js', 'utf8');
         var expectedFile = new gutil.File({
           contents: new Buffer(outFile)

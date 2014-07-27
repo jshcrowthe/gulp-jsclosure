@@ -10,13 +10,7 @@ module.exports = function (options) {
   if (Array.isArray(options)) {
     params = options;
   } else if (typeof options === "object") {
-    for (var i in options) {
-      if (options.hasOwnProperty(i)) {
-        if (options[i]) {
-          params.push(i);
-        }
-      }
-    }
+    if (Array.isArray(options.params)) params = options.params;
   } 
   /**
    * This function will take an array of params to be passed into the closure
