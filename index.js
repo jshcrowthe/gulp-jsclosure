@@ -64,5 +64,5 @@ module.exports = function (options) {
     };
   };
 
-  return through.obj(buildClosure(params));
+  return through.obj(buildClosure(headerParams, footerParams));
 };
