@@ -2,9 +2,9 @@ gulp-jsclosure [![Build Status](https://travis-ci.org/jshcrowthe/gulp-jsclosure.
 =======================
 
 
-Javascript closure creator for [gulp](https://github.com/gulpjs/gulp/). 'undefined; will always be automatically
-appended as last argument of the closure function and will *NOT* be included in the closure call, thus 'undefined' will
-always be truely 'undefined' inside the closure.
+Javascript closure creator for [gulp](https://github.com/gulpjs/gulp/). `undefined` will always be automatically
+appended as last argument of the closure function and will *NOT* be included in the closure call, thus `undefined` will
+always be truely `undefined` inside the closure.
 
 ```javascript
 var closure = require('gulp-jsclosure');
