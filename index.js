@@ -20,6 +20,7 @@ module.exports = function (options) {
       }
     }
   }
+  headerParams.push('undefined');
   /**
    * This function will take an array of params to be passed into the closure
    * it will build the javascript closure around the file and it will pass the file
