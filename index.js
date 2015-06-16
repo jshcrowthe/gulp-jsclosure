@@ -1,7 +1,9 @@
+"use strict";
+
 var through = require("through2");
 var gutil = require("gulp-util");
 var PluginError = gutil.PluginError;
-var PLUGIN_NAME = 'gulp-jsclosure';
+var PLUGIN_NAME = "gulp-jsclosure";
 
 module.exports = function (options) {
   var newline = gutil.linefeed;
@@ -9,18 +11,19 @@ module.exports = function (options) {
   var footerParams = [];
 
   if (Array.isArray(options)) {
-    headerParams = footerParams = options;
+    headerParams = options.slice(0);
+    footerParams = options.slice(0);
   } else if (typeof options === "object") {
     for (var i in options) {
       if (options.hasOwnProperty(i)) {
         if (options[i]) {
           headerParams.push(i);
-          footerParams.push(typeof options[i] === 'string' ? options[i] : i);
+          footerParams.push(typeof options[i] === "string" ? options[i] : i);
         }
       }
     }
   }
-  headerParams.push('undefined');
+  headerParams.push("undefined");
   /**
    * This function will take an array of params to be passed into the closure
    * it will build the javascript closure around the file and it will pass the file
@@ -48,7 +51,7 @@ module.exports = function (options) {
       }
 
       if (file.isStream()) {
-        this.emit('error', new PluginError(PLUGIN_NAME, 'gulp-jsclosure: Streaming not supported'));
+        this.emit("error", new PluginError(PLUGIN_NAME, "gulp-jsclosure: Streaming not supported"));
         return callback();
       }
 
