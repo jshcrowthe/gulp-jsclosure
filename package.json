@@ -1,6 +1,6 @@
 {
   "name": "gulp-jsclosure",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Gulp Plugin that wraps your file in a configurable javascript closure",
   "main": "index.js",
   "scripts": {
