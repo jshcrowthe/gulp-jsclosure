@@ -35,13 +35,13 @@ var b = 2;
 })(angular, window);
 ```
 
-#### Options: object (e.g. closure({angular:true, window: true}))
+#### Options: object (e.g. closure({angular:'window.angular', window: true}))
 
 ```javascript
 ;(function(angular, window) {
 var a = 1;
 var b = 2;
-})(angular, window);
+})(window.angular, window);
 ```
 
 ## Example Usage
