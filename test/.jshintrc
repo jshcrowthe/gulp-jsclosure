@@ -1,0 +1,9 @@
+{
+  "extends": "../.jshintrc-base",
+  "node": true,
+  "globals": {
+    "describe": false,
+    "it": false,
+    "beforeEach": false
+  }
+}
